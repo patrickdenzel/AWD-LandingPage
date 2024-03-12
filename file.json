@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Resume",
+        "description": "My Resume.",
+        "link": "./Resume"
+    },
+    {
+        "title": "Animation",
+        "description": "Midterm Animation.",
+        "link": "./Animation"
+    },
+    {
+        "title": "Everyday",
+        "description": "7 Buttons - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday.",
+        "link": "./Everyday"
+    },
+    {
+        "title": "Calculator",
+        "description": "Calculator.",
+        "link": "./Calculator"
+    }
+]
