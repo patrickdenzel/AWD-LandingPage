@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../Images/BluStar.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 225, 255);
+    margin-bottom: 2rem;
+}
+
+.cardHolder {
+    display: grid;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 1rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: linear-gradient(45deg, rgba(116, 143, 158, 0) 0%, #ffffff 100%);
+    box-shadow: 2px 3px 5px white;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added */
+}
+
+.card:hover {
+    box-shadow: 3px 5px 5px #10e5ec;
+    transform: translateY(-5px); /* Added */
+}
+
+.cardTitle {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover .cardTitle {
+    color: #10e5ec;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Added */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Change to desired scale */
+}

@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url('../Images/ELMOFIRE.gif') center center fixed;
+    background-size: cover;
+  }
+  
+  #buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: fixed;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  
+  button {
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    padding: 12px 16px; 
+    font-size: 16px; 
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button-Monday {
+    background-color: rgb(0, 255, 234);
+    border-color: rgb(0, 255, 234);
+  }
+  
+  .button-Tuesday {
+    background-color: rgb(162, 0, 255);
+    border-color: rgb(162, 0, 255);
+  }
+  
+  .button-Wednesday {
+    background-color: rgb(255, 0, 98);
+    border-color: rgb(255, 0, 98);
+  }
+  
+  .button-Thursday {
+    background-color: rgb(21, 255, 0);
+    border-color: rgb(21, 255, 0);
+  }
+  
+  .button-Friday {
+    background-color: rgb(255, 136, 0);
+    border-color: rgb(255, 136, 0);
+  }
+  
+  .button-Saturday {
+    background-color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
+  }
+  
+  .button-Sunday {
+    background-color: rgb(255, 251, 0);
+    border-color: rgb(255, 251, 0);
+  }
+  
+  button:hover {
+    filter: brightness(90%); 
+  }
+  
+  .box {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0; 
+    border: 5px solid transparent; 
+    background-color: transparent; 
+  }
+  
+  @keyframes fadeInFromTop {
+    0% {
+      transform: translate(-50%, -100%) scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOutToTop {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -100%) scale(1);
+      opacity: 0;
+    }
+  }
+  
+  #box-Monday {
+    border-color: rgb(0, 255, 234); 
+  }
+  
+  #box-Tuesday {
+    border-color: rgb(162, 0, 255); 
+  }
+  
+  #box-Wednesday {
+    border-color: rgb(255, 0, 98); 
+  }
+  
+  #box-Thursday {
+    border-color: rgb(21, 255, 0); 
+  }
+  
+  #box-Friday {
+    border-color: rgb(255, 136, 0); 
+  }
+  
+  #box-Saturday {
+    border-color: rgb(255, 0, 0); 
+  }
+  
+  #box-Sunday {
+    border-color: rgb(255, 251, 0);
+  }
+  
+  #box-Monday.active {
+    animation: fadeInFromTop 0.5s ease-in-out;
+  }
+  
+  #box-Tuesday.active {
+    animation: fadeInFromTop 0.5s ease-in-out;
+  }
+  
+  #box-Wednesday.active {
+    animation: fadeInFromTop 0.5s ease-in-out;
+  }
+  
+  #box-Thursday.active {
+    animation: fadeInFromTop 0.5s ease-in-out;
+  }
+  
+  #box-Friday.active {
+    animation: fadeInFromTop 0.5s ease-in-out;
+  }
+  
+  #box-Saturday.active {
+    animation: fadeInFromTop 0.5s ease-in-out;
+  }
+  
+  #box-Sunday.active {
+    animation: fadeInFromTop 0.5s ease-in-out;
+  }
+  
+  #box-Monday.exit,
+  #box-Tuesday.exit,
+  #box-Wednesday.exit,
+  #box-Thursday.exit,
+  #box-Friday.exit,
+  #box-Saturday.exit,
+  #box-Sunday.exit {
+  animation: fadeOutToTop 0.5s ease-in-out;
+  }
+  
+  #box-Monday.active,
+  #box-Tuesday.active,
+  #box-Wednesday.active,
+  #box-Thursday.active,
+  #box-Friday.active,
+  #box-Saturday.active,
+  #box-Sunday.active {
+    transform: translate(-50%, -50%) scale(1);
+    border-color: transparent;
+    opacity: 1;
+  }

@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Image/CATGalaxy.gif');
+    background-size: cover;
+}
+
+.resume {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.profile-picture {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.color-button {
+    position: fixed;
+    top: 10px;
+    left: 10px; 
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent; 
+    border: none;
+}
+
+.color-button img {
+    width: 50px; 
+    height: 50px; 
+}

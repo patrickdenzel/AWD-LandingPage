@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Assets/Styles/styles.css">
+  <title>JDM</title>
+</head>
+<body>
+  <section>
+    <h1>&#8595; Scroll Down to Reveal &#8595;</h1>
+  </section>
+
+  <section>
+    <div class="container reveal fade-bottom">
+      <h2>JDM Cars</h2>
+      <img src="Assets/Images/JDMJapan.png" alt="Section Image" class="center-image rotate-image">
+      <div class="text-container">
+        <div class="text-box">
+          <h3>Mazda RX-7</h3>
+          <img src="Assets/Images/RX7.jpg" alt="RX7 Image" class="center-image" onclick="openModal('RX7.jpg')">
+          <p>
+            The Mazda RX-7 is a legendary sports car celebrated for its sleek design and nimble handling. Notable for its distinctive rotary engine, the RX-7 delivers a unique driving experience with high-revving performance. Throughout its various generations, this iconic model has consistently captivated enthusiasts with its blend of style and dynamic driving capabilities.
+          </p>
+        </div>
+
+        <div class="text-box">
+          <h3>Nissan GTR-R34</h3>
+          <img src="Assets/Images/R34.jpg" alt="R34 Image" class="center-image" onclick="openModal('R34.jpg')">
+          <p>
+            The Nissan GT-R R34 is an iconic sports car celebrated for its aggressive styling and exceptional performance, featuring a powerful twin-turbocharged RB26 engine and advanced all-wheel-drive system. With a racing heritage and a reputation for dominating on both the street and the track, the GT-R R34 remains a timeless classic among enthusiasts worldwide.
+          </p>
+        </div>
+
+        <div class="text-box">
+          <h3>Toyota Supra Mk4</h3>
+          <img src="Assets/Images/MK4.jpeg" alt="MK4 Image" class="center-image" onclick="openModal('MK4.jpeg')">
+          <p>
+            The Toyota Supra MK4 is celebrated for its bold design, potent performance, and iconic 2JZ-GTE engine. With a sleek and aerodynamic profile, it has become an emblem of 1990s automotive styling. Renowned for its robust power, especially in the Turbo model, the Supra MK4 stands as a high-performance classic captivating car enthusiasts globally.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hover-div">
+      <p>This is the hover content for the JDM Cars section.</p>
+    </div>
+  </section>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script src="Assets/Script/script.js"></script>
+</body>
+</html>
